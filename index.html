@@ -51,8 +51,15 @@
 
     <!-- Your styles -->
     <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Google Sign-in for Websites -->
+    <meta name="google-signin-scope" content="g540045@gmail.com">
+   <meta name="google-signin-client_id" content="837932384727-t3du0gsakmg91a2gt17ag8f52vpmee84.apps.googleusercontent.com">
+   <script src="https://apis.google.com/js/platform.js" async defer></script>
+
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
@@ -65,10 +72,6 @@
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
           <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
           <a href="#features" class="mdl-layout__tab">Features</a>
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
-            <i class="material-icons" role="presentation">add</i>
-            <span class="visuallyhidden">Add</span>
-          </button>
         </div>
       </header>
       <main class="mdl-layout__content">
